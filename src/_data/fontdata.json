@@ -3,24 +3,32 @@
 		"name": "Tecnica 53",
 		"selector": "tecnica-53",
 		"weight": "53",
-		"style": "Standard"
+		"style": "53",
+		"subfamily": "Standard",
+		"weightName": "53"
 	},
 	{
 		"name": "Tecnica 53 Line",
 		"selector": "tecnica-53-line",
 		"weight": "53",
-		"style": "Line"
+		"style": "53 Line",
+		"subfamily": "Line",
+		"weightName": "53 Line"
 	},
 	{
 		"name": "Tecnica 55",
 		"selector": "tecnica-55",
 		"weight": "55",
-		"style": "Standard"
+		"style": "55",
+		"subfamily": "Standard",
+		"weightName": "55"
 	},
 	{
 		"name": "Tecnica 55 Line",
 		"selector": "tecnica-55-line",
 		"weight": "55",
-		"style": "Line"
+		"style": "55 Line",
+		"subfamily": "Line",
+		"weightName": "55 Line"
 	}
 ]
