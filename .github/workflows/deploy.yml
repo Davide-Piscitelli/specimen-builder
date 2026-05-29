@@ -35,8 +35,8 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build Font Data
-        run: npm run fontdata
+      # - name: Build Font Data
+      #   run: npm run fontdata
 
       - name: Build Site
         run: npm run build
