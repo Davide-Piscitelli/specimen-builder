@@ -66,15 +66,24 @@ module.exports = eleventyConfig => {
 
 	if (process.env.ELEVENTY_ENV === "production") {
 		eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
-			if (outputPath.endsWith(".html")) {
-				let minified = htmlmin.minify(content, {
-					useShortDoctype: true,
-					removeComments: true,
-					collapseWhitespace: true
-				});
-				return minified;
+			if (outputPath && outputPath.endsWith(".html")) {
+				try {
+					let minified = htmlmin.minify(content, {
+						useShortDoctype: true,
+						removeComments: true,
+						collapseWhitespace: true,
+						conservativeCollapse: true,
+						caseSensitive: true
+					});
+					return minified;
+				} catch (error) {
+					console.log(
+						"Errore di minificazione ma continuo la build:",
+						error
+					);
+					return content; // Se c'è un errore restituisce l'HTML normale senza bloccarsi
+				}
 			}
-
 			return content;
 		});
 	}
