@@ -10,7 +10,7 @@
 	{
 		"name": "Tecnica 53 Line",
 		"selector": "tecnica-53-line",
-		"weight": "53-line",
+		"weight": "53",
 		"style": "Line",
 		"subfamily": "Line",
 		"weightName": "53 Line"
@@ -26,7 +26,7 @@
 	{
 		"name": "Tecnica 55 Line",
 		"selector": "tecnica-55-line",
-		"weight": "55-line",
+		"weight": "55",
 		"style": "Line",
 		"subfamily": "Line",
 		"weightName": "55 Line"
